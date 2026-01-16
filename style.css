@@ -118,7 +118,7 @@ input{
     padding: 15px;
     overflow-x: auto;
 }
-
+ 
 button {
     background-color: #303030;
     color: white;
@@ -141,6 +141,20 @@ button:hover {
   padding: 20px;
 }
 
+.video-info { 
+  display: flex; 
+  align-items: center; 
+  margin-top: 8px;
+ }
+
+ .img-icon { 
+  width: 24px; 
+  height: 24px; 
+  border-radius: 50%; 
+  margin-right: 10px;
+
+ }
+
 .item {
   background: #fff;
   border-radius: 8px;
@@ -160,12 +174,12 @@ button:hover {
 }
 
 .caption {
-  padding: 10px;
-  font-size: 14px;
+  margin: 0;
+  font-size: 13px;
   color: #333;
-  line-height: 1.4;
-  text-align: left;
+  line-height: 1.3;
 }
+
 
 @media (max-width: 900px) {
   .sidebar {
