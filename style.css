@@ -2,10 +2,6 @@ body {
     margin: 0;
     background-color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-
 }
 
 
@@ -62,6 +58,7 @@ input{
 .create-text{
   font-size: 15px;
   font-weight:600;
+  margin-left: 8px;
 }
 
 .search-section{
@@ -111,20 +108,20 @@ input{
 }
 
 .main{
-  margin-left: 200px;
   margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
  
 
 .sidebar {
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 200px;
+
     height: calc(100vh - 60px);
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
+    width: 20%;
 }
 
 .sidebar div {
@@ -146,26 +143,38 @@ input{
     color: rgb(0, 0, 0);
 }
 
-
-
-.section1 {
+.content{
+    width: 80%;
     display: flex;
-    gap: 20px;
-    padding: 15px;
-    overflow-x: auto;
-    height: 40px;
+    flex-direction: column;
+    
 }
- 
+
+.section1{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  overflow-x:scroll;
+
+  
+}
+
+
+.button:-webkit-scrollbar {
+  display: none;
+}
+
 button {
     background-color: #f0ebeb;
     color: rgb(0, 0, 0);
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 8px 16px;
     cursor: pointer; 
     font-size: 13px;
     font-weight: 500;
 }
+
 
 button:hover {
     background-color: #505050;
@@ -177,6 +186,7 @@ button:hover {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
+  
 }
 
 .item {
@@ -186,6 +196,7 @@ button:hover {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
 }
 
 .item:hover {
@@ -193,24 +204,27 @@ button:hover {
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-.item img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
-.item .img-icon{
-    width: 30px; 
-    height: 30px; 
+.small-img .img-icon{
+    width: 35px; 
+    height: 35px; 
     border-radius: 50%; 
+    margin-top:12px;
+    padding-left: 3px;
+    
     
   } 
 
+  .caption{
+    padding-left: 15px;
+    padding-top: 10px;
+    
+  }
 
 .info{
   display: flex;
-  align-items:center;
-  gap: 12px;
+  flex-direction: row;
+  
 
 }
 
