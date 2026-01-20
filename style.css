@@ -164,9 +164,11 @@ input{
   width: 100%;
   overflow-x:scroll;
 
-  
 }
 
+.section1::-webkit-scrollbar {
+  display: none;
+}
 
 .button:-webkit-scrollbar {
   display: none;
@@ -277,6 +279,20 @@ button:hover {
   .mic{
     background-color: transparent;
     border: none;
+  }
+
+  
+  .profile{
+    display: none;
+  }
+
+  .create-text{
+    display: none;
+  }
+
+  .create-section{
+    background-color: transparent;
+    
   }
   
 }
