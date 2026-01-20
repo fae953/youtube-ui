@@ -73,6 +73,14 @@ input{
   padding-right: 20px;
 }
 
+.mic{
+  background-color: #c9c8c88f;
+  border: 1px solid #d3d3d3;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 10px;
+}
+
 .dropdown {
   display: flex;
   flex-direction: column;
@@ -252,8 +260,23 @@ button:hover {
   .main {
     margin-left: 0;
   }
+  
+  .content{
+    width: 100%;
+  }
 
   input {
     display: none;
   }
+
+  .search-section{
+    background-color: transparent;
+    border: none;
+  }
+
+  .mic{
+    background-color: transparent;
+    border: none;
+  }
+  
 }
